@@ -1,0 +1,106 @@
+.schedule-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.top-bar-button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.top-bar-button:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+
+.top-bar-button:active {
+    background-color: #0056b3;
+    border-color: #004494;
+    color: #fff;
+}
+
+.top-year{
+    text-align: center; 
+    width: 100%; 
+    padding: 10px 0; 
+    font-size: 18px; 
+    font-weight: bold; 
+    background-color: #fff; 
+  }
+
+.top-date th {
+  text-align: center;
+  width: 100%; 
+  padding: 10px 0; 
+  font-size: 18px; 
+  font-weight: bold; 
+  background-color: #fff; 
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: none;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    height: 50px;
+    min-height: 50px;
+}
+
+.row-header {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.empty-cell {
+    background-color: #ffffff;
+}
+
+
+.gray-column {
+    background-color: #d3d3d3;
+   
+}
+
+.spacer-row .spacer-cell {
+    background-color: #d3d3d3;
+  
+}
+
+.empty-cell:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.spacer {
+    height: 10px;
+    background-color: transparent;
+}
