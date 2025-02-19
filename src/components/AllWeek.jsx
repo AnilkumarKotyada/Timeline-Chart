@@ -112,7 +112,6 @@ const AllWeek = () => {
                                             );
                                         }
                                         if (layer === "Layer 2") {
-                                            // Add "Richard M" data for the specified dates
                                             if (
                                                 (date === "9" && week.name === "Week 40") ||
                                                 (date === "10" && week.name === "Week 41") ||
@@ -139,8 +138,6 @@ const AllWeek = () => {
                                                     </td>
                                                 );
                                             }
-
-                                            // Default empty cell
                                             return (
                                                 <td
                                                     key={`${layer}-${date}`}
@@ -153,7 +150,6 @@ const AllWeek = () => {
                                         }
 
                                         if (layer === "Override Layer") {
-                                            // Add "Jack A" for Week 41 Dates 14 to 16 and Week 42 Date 17
                                             if (
                                                 (week.name === "Week 41" && (date === "14" || date === "15" || date === "16")) ||
                                                 (week.name === "Week 42" && date === "17")
@@ -171,8 +167,6 @@ const AllWeek = () => {
                                                     </td>
                                                 );
                                             }
-
-                                            // Default empty cell for Override Layer
                                             return (
                                                 <td
                                                     key={`${layer}-${date}`}
@@ -185,7 +179,6 @@ const AllWeek = () => {
                                         }
 
                                         if (layer === "Final Schedule") {
-                                            // Add names for specific dates in the Final Schedule
                                             if (
                                                 (week.name === "Week 39" && date === "1") ||
                                                 (week.name === "Week 39" && date === "2")

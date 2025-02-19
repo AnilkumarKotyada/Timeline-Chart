@@ -68,7 +68,7 @@ const Week2 = () => {
 
     const getCellClass = (data, isEmpty, date) => {
         if (isEmpty && isGrayColumn(date)) {
-            return "gray-column"; // Apply gray-column class if it's empty and it's "00" or "12"
+            return "gray-column"; 
         }
         if (data === "Jack A") {
             return "jack-a";
@@ -135,7 +135,7 @@ const Week2 = () => {
                                               ""
                                             : getCellData(layer, week.name, date);
 
-                                    const isEmpty = cellData === ""; // Check if the cell is empty
+                                    const isEmpty = cellData === ""; 
 
                                     return (
                                         <td

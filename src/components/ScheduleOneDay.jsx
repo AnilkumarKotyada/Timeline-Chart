@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./ScheduleOneDay.css" 
 
@@ -70,21 +70,17 @@ const ScheduleOneDay = () => {
                                 key={`layer1-${hour}`}
                                 className={`empty-cell ${hour % 2 === 0 ? "gray-column" : ""}`}
                                 style={{
-                                    backgroundColor:
-                                        [0, 2, 4, 6, 20, 22].includes(hour)
-                                            ? "#d3d3d3;"
-                                            : (hour >= 8 && hour <= 18 ? "orange" : "transparent"),
-                                    color: hour >= 8 && hour <= 18 || [0, 2, 4, 6, 20, 22].includes(hour) ? "white" : "inherit",
-                                    textAlign: hour >= 8 && hour <= 18 || [0, 2, 4, 6, 20, 22].includes(hour) ? "center" : "inherit",
-                                    padding: "0",
-                                    
-                                }}
-                            >
+                                    backgroundColor: [0, 2, 4, 6, 20, 22].includes(hour)
+                                    ? "#d3d3d3"
+                                    : (hour >= 8 && hour <= 18 ? "orange" : "transparent"),
+                                color: hour >= 8 && hour <= 18 || [0, 2, 4, 6, 20, 22].includes(hour) ? "white" : "inherit",
+                                textAlign: hour >= 8 && hour <= 18 || [0, 2, 4, 6, 20, 22].includes(hour) ? "center" : "inherit",
+                                padding: "0",   
+                                }}>
                                 {hour >= 8 && hour <= 18 ? "Jack A" : ""}
                             </td>
                         ))}
                     </tr>
-
                     <tr>
                         <td className="row-header">Layer 2</td>
                         {[...Array(24).keys()].map((hour) => (
